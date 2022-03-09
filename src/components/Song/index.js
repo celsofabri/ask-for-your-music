@@ -10,12 +10,12 @@ import {
   StyledSongActions
 } from './styled';
 
-const Song = ({ music }) => {
+const Song = ({ music, color }) => {
   
   const { author, name, message } = music;
 
   return (
-    <StyledSong>
+    <StyledSong color={color}>
       <StyledWrapper>
         <StyledSongInfo>
           <StyledSongAuthor>{ author }</StyledSongAuthor>

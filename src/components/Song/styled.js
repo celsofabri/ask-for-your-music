@@ -4,7 +4,7 @@ export const StyledSong = styled.article`
   display: block;
   width: 100%;
   padding: 16px;
-  background-color: #666bad;
+  background-color: ${(props) => props.color ? props.color : '#666bad'};
 `;
 
 export const StyledSongInfo = styled.div`
