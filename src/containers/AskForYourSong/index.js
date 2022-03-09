@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
@@ -10,15 +10,15 @@ const AskForYourSong = () => {
 
   const onSubmit = (data) => {
     const currentStorage = localStorage.getItem('playlist');
-    const playlist = [];
+    const setPlaylist = [];
 
     if (currentStorage !== null) {
       const playlistStorage = JSON.parse(currentStorage);
       playlistStorage.push(data);
       localStorage.setItem('playlist', JSON.stringify(playlistStorage));
     } else {
-      playlist.push(data);
-      localStorage.setItem('playlist', JSON.stringify(playlist));
+      setPlaylist.push(data);
+      localStorage.setItem('playlist', JSON.stringify(setPlaylist));
     }
   };
 

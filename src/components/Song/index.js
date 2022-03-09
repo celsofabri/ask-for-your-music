@@ -11,9 +11,6 @@ import {
 } from './styled';
 
 const Song = ({ music, color }) => {
-
-  console.log('music', music);
-  
   const { author, name, message } = music;
 
   return (
