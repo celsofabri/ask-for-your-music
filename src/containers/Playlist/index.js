@@ -1,9 +1,15 @@
 import React from 'react';
+import Song from 'components/Song'
+import MUSICS from 'components/Song/constants';
 
 const Playlist = () => {
 
   return(
-    <p>Playlist</p>
+    <main>
+      {MUSICS.map((music) => {
+        return <Song music={music} />
+      })}
+    </main>
   );  
 }
 
