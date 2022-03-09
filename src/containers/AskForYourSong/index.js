@@ -1,12 +1,13 @@
 import React from 'react';
-import Button from 'components/Form/Button';
+import Header from 'components/Header';
+import Footer from 'components/Footer';
 
 const AskForYourSong = () => {
 
   return(
     <React.Fragment>
-      <p>Peça sua música</p>
-      <Button>Botão</Button>
+      <Header />
+      <Footer />
     </React.Fragment>
   );  
 }

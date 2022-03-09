@@ -1,8 +1,8 @@
 import React from 'react';
 import Song from 'components/Song'
 import { colors } from 'assets/global/tokens';
-import MUSICS from 'components/Song/constants';
 import { randomProperty } from 'utils';
+import MUSICS from 'components/Song/constants';
 
 const Playlist = () => {
 
