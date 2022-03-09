@@ -1,11 +1,11 @@
 import React, { forwardRef } from 'react';
-import { StyledButton } from '../styled';
+import { StyledInput } from '../styled';
 
 const Button = forwardRef(({ children, ...props }, ref) => {
     return (
-      <StyledButton ref={ref} {...props}>
+      <StyledInput ref={ref} {...props}>
         {children}
-      </StyledButton>
+      </StyledInput>
     );
   }
 );
